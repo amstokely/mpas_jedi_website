@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/* base styles */
+* {
+  margin: 0;
+  font-family: "Quicksand";
+  color: #333;
+}
+
+.MpasJediTutorial {
+  margin: 10px;
+  height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.MpasJediTutorial h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.MpasJediTutorial .p {
+  padding-left: 20px;
+}
+
+.TestResults {
+  height: 100vh;
+  padding: 20px;
+}
+
+.TestResults .passed {
+    color: #4caf50;
+}
+
+.TestResults .failed {
+    color: #f44336;
+}
+
+.TestResults .not-found {
+    color: #ff9800;
+}

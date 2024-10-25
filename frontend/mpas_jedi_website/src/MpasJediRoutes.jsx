@@ -11,7 +11,7 @@ import MpasJediTutorialSection6 from "./components/mpas_jedi_tutorial/MpasJediTu
 import MpasJediTutorialSection7 from "./components/mpas_jedi_tutorial/MpasJediTutorialSection7";
 import MpasJediTutorialSection8 from "./components/mpas_jedi_tutorial/MpasJediTutorialSection8";
 import Home from "./components/home/Home";
-function App() {
+const MpasJediRoutes = () => {
     return (
             <Router>
                 <Routes>
@@ -32,4 +32,4 @@ function App() {
     );
 }
 
-export default App;
+export default MpasJediRoutes;

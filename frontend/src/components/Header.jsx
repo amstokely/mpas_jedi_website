@@ -13,13 +13,13 @@ const Header = () => {
                 " lg:px-1 xl:px-1 max-lg:py-4"}
             >
                 <a className="flex xl:mr-3" href="#nsf">
-                    <img src={nsf} width={80} height={40} alt="NSF"/>
+                    <img src={nsf} width={50} height={40} alt="NSF"/>
                 </a>
                 <a className="flex xl:mr-10" href="#ncar">
-                    <img src={ncar} width={80} height={40} alt="ncar"/>
+                    <img src={ncar} width={50} height={40} alt="ncar"/>
                 </a>
                 <span
-                    className={"relative inline-flex items-center justify-center h-11 text-n-1 text-4xl transition-colors hover:text-color-1"}>
+                    className={"relative inline-flex items-center justify-center h-11 text-n-1 text-6xl font-hubballi font-extralight"}>
                     MPAS-JEDI
                 </span>
                 <nav className={"hidden fixed top-[5rem] left-0 right-0" +
@@ -30,7 +30,7 @@ const Header = () => {
                         {navigation.map((item) => (<a key={item.id} href={item.url}
                                                       className={"block relative font-code text-2xl uppercase text-n-1 transition-colors" +
                                                           ` hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25
-                                 lg:text-xs lg:font-semibold ${item.url === location.hash ? 'z-2 lg:text-n-1' : 'lg:text-n-1/50'}
+                                 lg:text-s lg:font-semibold ${item.url === location.hash ? 'z-2 lg:text-n-1' : 'lg:text-n-1/50'}
                                  lg:leading-5 lg:hover:text-n-1 xl:px-12`}>
                                 {item.title}
                             </a>

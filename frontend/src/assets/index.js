@@ -1,5 +1,6 @@
 import brainwave from "./brainwave.svg";
 import nsf from "./nsf.png";
+import satellite from "./satellite.png";
 import ncar from "./ncar.png"
 import github from "./github.png";
 import check from "./check.svg";
@@ -82,6 +83,7 @@ export {
     brainwave,
     nsf,
     ncar,
+    satellite,
     github,
     check,
     check2,

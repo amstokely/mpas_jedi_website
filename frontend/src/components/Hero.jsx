@@ -1,6 +1,7 @@
 import {curve, heroBackground, robot, satellite} from "../assets";
 import Button from "./Button";
 import Section from "./Section";
+import Heading from "./Heading.jsx";
 
 const Hero = () => {
 
@@ -11,28 +12,20 @@ const Hero = () => {
         >
             <div className="container relative mt-20">
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
-                    <div className={"font-hubballi text-[5.25rem] mb-7 text-center"}>
-                        MPAS-JEDI
-                    </div>
-                    <div className={"font-sans text-xl text-left"}>
-                        <span className={"font-thin"}>
+                    <Heading title={"MPAS-JEDI"}/>
+                    <div className={"font-sans font-semibold text-xl text-left flex"}>
                         A community&nbsp;
-                            </span>
-                        <span className={"font-bold"}>
                         data assimilation&nbsp;
-                            </span>
-                        <span className={"font-thin"}>
                         system for the&nbsp;
-                            </span>
-                        <span className={"font-bold"}>
                         Model for Prediction Across Scales - Atmospheres&nbsp;
-                            </span>
-                        <span className={"font-thin"}>
                         based upon the &nbsp;
-                            </span>
-                        <span className={"font-bold"}>
                         Joint Effort for Data assimilation Integration.
-                            </span>
+                        <div className={"mb-3 text-left mr-3"}>
+                            <Button spanClasses={"text-left"}
+                                    href={"#About"}>
+                               Learn More
+                            </Button>
+                        </div>
                     </div>
                     <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
                         <div

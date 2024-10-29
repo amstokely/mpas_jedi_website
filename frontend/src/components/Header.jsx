@@ -1,6 +1,7 @@
 import {navigation} from "../constants/index.js";
 import {useLocation} from "react-router-dom";
-import {nsf, ncar} from "../assets/index.js";
+import {nsf, ncar, github} from "../assets/index.js";
+import Button from "./Button.jsx";
 
 const Header = () => {
     const location = useLocation();
@@ -19,7 +20,7 @@ const Header = () => {
                     <img src={ncar} width={50} height={40} alt="ncar"/>
                 </a>
                 <span
-                    className={"relative inline-flex items-center justify-center h-11 text-n-1 text-6xl font-hubballi font-extralight"}>
+                    className={"relative inline-flex items-center justify-center h-11 text-n-1 text-4xl font-hubballi font-extralight"}>
                     MPAS-JEDI
                 </span>
                 <nav className={"hidden fixed top-[5rem] left-0 right-0" +
@@ -30,13 +31,20 @@ const Header = () => {
                         {navigation.map((item) => (<a key={item.id} href={item.url}
                                                       className={"block relative font-code text-2xl uppercase text-n-1 transition-colors" +
                                                           ` hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25
-                                 lg:text-s lg:font-semibold ${item.url === location.hash ? 'z-2 lg:text-n-1' : 'lg:text-n-1/50'}
+                                 lg:text-xs lg:font-semibold ${item.url === location.hash ? 'z-2 lg:text-n-1' : 'lg:text-n-1/50'}
                                  lg:leading-5 lg:hover:text-n-1 xl:px-12`}>
                                 {item.title}
                             </a>
                         ))}
                     </div>
                 </nav>
+                <a className={"block relative bg-transparent px-6 py-6 md:py-8 lg:-mr-0.25 xl:px-12"}>
+                    <Button onClick={
+                        () => window.open("https://github.com/JCSDA/mpas-bundle")
+                    } >
+                        <img src={github} width={30} height={30} alt="NSF"/>
+                    </Button>
+                </a>
             </div>
         </div>
     );

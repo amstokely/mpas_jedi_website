@@ -1,6 +1,7 @@
 import brainwave from "./brainwave.svg";
 import nsf from "./nsf.png";
 import ncar from "./ncar.png"
+import github from "./github.png";
 import check from "./check.svg";
 import brainwaveSymbol from "./brainwave-symbol.svg";
 import brainwaveWhiteSymbol from "./brainwave-symbol-white.svg";
@@ -81,6 +82,7 @@ export {
     brainwave,
     nsf,
     ncar,
+    github,
     check,
     check2,
     loading1,

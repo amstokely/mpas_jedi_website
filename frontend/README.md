@@ -1,4 +1,4 @@
-#MPAS-JEDI Website
+# MPAS-JEDI Website
 ## Overview
 This repository contains the source code for the MPAS-JEDI website. The goal of this website is to provide a centralized hub for information about the MPAS-JEDI project, including news, links to past tutorials, upcoming event information, and access to MPAS-JEDI documentation. The website was designed to be simple, aesthetically pleasing, and easily updatable by the Panda-C team.
 

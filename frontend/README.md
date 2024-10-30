@@ -6,6 +6,37 @@ While the website is written in JavaScript using the React.js library, no prior 
 
 This `README` includes a brief tutorial on adding/removing navbar components, publications, and tutorials.
 
+## Setup
+### Prerequisites
+The only software dependency required to contribute to the `MPAS-JEDI` website is `Node.js`. To install `Node.js`, follow the instructions
+below:
+#### Installing Node.js on MacOS and Linux 
+Open a terminal and run the following command:
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+```
+This output export command when it finishes. Copy and paste the export command into the terminal to add `nvm` to the environment.
+Now restart your terminal
+```bash
+exec bash
+```
+and run 
+```bash
+nvm install 22
+```
+to install `Node.js`.
+Verify the installation by running
+```bash
+node -v # should print `v22.11.0`
+```
+and 
+```bash
+npm -v # should print `10.9.0`
+```
+
+
+```bash
+
 ## Editing Website Sections
 The `src/sections` directory contains JavaScript files that define each section’s content. Files are named according to their respective sections 
 (e.g., `publications.js` defines the publications section content). 

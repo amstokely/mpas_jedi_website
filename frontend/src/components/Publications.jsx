@@ -22,6 +22,7 @@ const Publications = () => {
                             url={item.url}
                             authors={item.authors}
                             date={item.date}
+                            summary={item.summary}
                         />
                             </a>
                     ))}

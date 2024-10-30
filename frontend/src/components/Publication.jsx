@@ -1,6 +1,8 @@
 import Button from "./Button.jsx";
+import {useState} from "react";
 
-const Publication = ({title, url, authors, date}) => {
+const Publication = ({title, url, authors, date, summary}) => {
+    const [hideSummary, setHideSummary] = useState(true);
     return (
         <div className={"container relative"}>
             <div className={
@@ -17,8 +19,8 @@ const Publication = ({title, url, authors, date}) => {
                             <span className={"font-bold"}>
                                 Authors:&nbsp;
                             </span>
-                            <span>{authors.join(', ')}</span>
-                        </div>
+                                <span>{authors.join(', ')}</span>
+                            </div>
                         )}
                         {date && (
                             <div className="text-left mb-6">
@@ -28,12 +30,29 @@ const Publication = ({title, url, authors, date}) => {
                                 <span>{date}</span>
                             </div>
                         )}
+                        <div id="summary" className={
+                            "text-left mb-6 " +
+                            `${hideSummary ? 'hidden' : 'block'} `
+                        }>
+                            <span className={"font-bold"}>
+                                Summary:&nbsp;
+                            </span>
+                            <span>{summary}</span>
+                        </div>
                     </div>
                 </div>
-                <div className={"mb-3 text-left mr-3"}>
+                <div className={"mb-3 text-left mr-3"} onClick={() => {
+                    setHideSummary(false)
+                }}>
                     <Button spanClasses={"text-left"} className={"m-3"}
                             href={url}>
                         Read
+                    </Button>
+                </div>
+                <div className={"mb-3 text-left mr-3"}>
+                    <Button spanClasses={"text-left"} className={"m-3"} onClick={()=>{
+                        hideSummary ? setHideSummary(false) : setHideSummary(true)}}>
+                       Summary
                     </Button>
                 </div>
             </div>

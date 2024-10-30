@@ -33,6 +33,11 @@ and
 ```bash
 npm -v # should print `10.9.0`
 ```
+### Setting up the Development Environment
+To set up the development environment, clone the `MPAS-JEDI` website repository and navigate to the project directory:
+```bash
+
+```
 
 
 ```bash

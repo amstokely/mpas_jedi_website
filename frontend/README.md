@@ -62,9 +62,10 @@ This will launch a local development server. The website will be accessible at t
 In this tutorial, we’ll rebuild the website content from scratch.
 
 1. **Start the Development Server**  
-   Begin by navigating to the `frontend` directory and starting the development server:
+   Begin by navigating to the `frontend` directory, checking out the tutorial branch, and starting the development server:
    ```bash
    cd frontend
+   git checkout tutorial
    npm run dev
    ```
    If you open the website in your browser, you’ll see that all sections are currently empty.

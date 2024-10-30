@@ -9,12 +9,12 @@ const Home = () => {
     return (
         <Section
             className="pt-[12rem] -mt-[5.25rem]"
-            id="hero"
+            id="home"
         >
             <div className="container relative mt-20">
-                <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
+                <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] place-items-center">
                     <Heading title={"MPAS-JEDI"}/>
-                    <div className={"font-sans font-semibold text-xl text-left flex"}>
+                    <div className={"font-sans font-semibold text-xl text-left flex items-center"}>
                         {home.introduction}
                         <div className={"mb-3 text-left mr-3"}>
                             <Button spanClasses={"text-left"}
@@ -31,7 +31,7 @@ const Home = () => {
                                 className="w-full opacity-10 blur-sm shadow-inner"
                                 width={1440}
                                 height={1800}
-                                alt="hero"
+                                alt="home"
                             />
                         </div>
 

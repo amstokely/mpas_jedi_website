@@ -1,46 +1,61 @@
 # MPAS-JEDI Website
+
 ## Overview
-This repository contains the source code for the MPAS-JEDI website. The goal of this website is to provide a centralized hub for information about the MPAS-JEDI project, including news, links to past tutorials, upcoming event information, and access to MPAS-JEDI documentation. The website was designed to be simple, aesthetically pleasing, and easily updatable by the Panda-C team.
 
-While the website is written in JavaScript using the React.js library, no prior JavaScript knowledge is necessary for basic updates. Basic HTML knowledge can be helpful for applying unique styling to text (e.g., changing font size, color), but most formatting is handled automatically by React.js and Tailwind CSS.
+This repository contains the source code for the MPAS-JEDI website, a centralized hub providing project news, past tutorials, event information, and documentation for MPAS-JEDI. The website is designed to be simple, visually appealing, and easily maintainable by the Panda-C team.
 
-This `README` includes a brief tutorial on adding/removing navbar components, publications, and tutorials.
+The site is built with JavaScript and React.js, but basic updates require no prior JavaScript knowledge. Some HTML knowledge may be helpful for styling (e.g., font size, color), though most formatting is handled by React.js and Tailwind CSS.
+
+This `README` provides guidance on adding/removing navbar components, publications, and tutorials.
 
 ## Setup
+
 ### Prerequisites
-The only software dependency required to contribute to the `MPAS-JEDI` website is `Node.js`. To install `Node.js`, follow the instructions
-below:
-#### Installing Node.js on MacOS and Linux 
-Open a terminal and run the following command:
+
+The only required dependency for contributing to the MPAS-JEDI website is `Node.js`. Install `Node.js` by following these steps:
+
+#### Installing Node.js on macOS and Linux
+
+Open a terminal and run:
+
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
 ```
-This output export command when it finishes. Copy and paste the export command into the terminal to add `nvm` to the environment.
-Now restart your terminal
+After installation, follow the instructions to copy and paste the provided export command into the terminal, adding nvm to your environment. Then, restart your terminal with:
+
 ```bash
 exec bash
 ```
-and run 
+Install the required Node.js version:
+
 ```bash
 nvm install 22
 ```
-to install `Node.js`.
-Verify the installation by running
-```bash
-node -v # should print `v22.11.0`
-```
-and 
-```bash
-npm -v # should print `10.9.0`
-```
-### Setting up the Development Environment
-To set up the development environment, clone the `MPAS-JEDI` website repository and navigate to the project directory:
-```bash
-
-```
-
+Verify the installation:
 
 ```bash
+node -v   # should print `v22.11.0`
+npm -v    # should print `10.9.0`
+```
+### Setting Up the Development Environment
+Clone the MPAS-JEDI website repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/amstokely/mpas_jedi_website
+cd mpas_jedi_website
+``` 
+Enter the frontend directory and install the dependencies:
+
+```bash
+cd frontend
+npm install
+```
+Start the development server:
+
+```bash
+npm start dev
+```
+This will launch a local development server. The website will be accessible at the port provided in the terminal output. Thanks to hot reloading, the website will automatically update with any changes made to the source code.
 
 ## Editing Website Sections
 The `src/sections` directory contains JavaScript files that define each section’s content. Files are named according to their respective sections 

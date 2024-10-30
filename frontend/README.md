@@ -59,7 +59,7 @@ export const publications = [
 ];
 ```
 
-Adding a New Publication
+### Adding a New Publication
 To add a new publication, simply append a new object to the array:
 
 ```javascript

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the source code for the MPAS-JEDI website, a centralized hub providing project news, past tutorials, event information, and documentation for MPAS-JEDI. The website is designed to be simple, visually appealing, and easily maintainable by the Panda-C team.
+This repository contains the source code for the MPAS-JEDI website, a centralized hub providing project news, past tutorials, event information, and documentation for MPAS-JEDI. The website is designed to be simple, visually appealing, and easily maintainable by the Panda-C team. Currently the site is hosted at `https://www2.mmm.ucar.edu/mpas-jedi/mpas_jedi_website/frontend/dist/index.html`.
 
 The site is built with JavaScript and React.js, but basic updates require no prior JavaScript knowledge. Some HTML knowledge may be helpful for styling (e.g., font size, color), though most formatting is handled by React.js and Tailwind CSS.
 

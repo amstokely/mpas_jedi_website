@@ -94,10 +94,10 @@ In this tutorial, we’ll rebuild the website content from scratch.
    Follow the same process for the other sections. Your final `navigation.js` file should look like this:
    ```javascript
    export const navigation = [
-       { id: 0, url: "#about", name: "About" },
-       { id: 1, url: "#tutorials", name: "Tutorials" },
-       { id: 2, url: "#events", name: "Upcoming Events" },
-       { id: 3, url: "#publications", name: "Publications" }
+       { id: 0, url: "#about", title: "About" },
+       { id: 1, url: "#tutorials", title: "Tutorials" },
+       { id: 2, url: "#events", title: "Upcoming Events" },
+       { id: 3, url: "#publications", title: "Publications" }
    ];
    ```
 
@@ -106,9 +106,9 @@ In this tutorial, we’ll rebuild the website content from scratch.
 3. **Add Content to the Home Section**  
    Open `home.js` in `frontend/src/sections`. Instead of `id` and `url`, this file has an `introduction` property for the site’s introduction. Add this object to the `home` array:
    ```javascript
-   {
-       introduction: "Welcome to the MPAS-JEDI website. Here you can find information about the project, tutorials, upcoming events, and publications."
-   }
+       introduction: "   A community data assimilation system for the Model for Prediction " +
+        "Across Scales - Atmospheres based upon the Joint Effort for Data assimilation Integration.",
+   
    ```
 
    Now, a formatted introduction will appear under the navbar.

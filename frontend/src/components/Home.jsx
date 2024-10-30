@@ -1,9 +1,9 @@
-import {curve, heroBackground, robot, satellite} from "../assets";
+import { satellite} from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import Heading from "./Heading.jsx";
 
-const Hero = () => {
+const Home = () => {
 
     return (
         <Section
@@ -22,7 +22,7 @@ const Hero = () => {
                         Joint Effort for Data assimilation Integration.
                         <div className={"mb-3 text-left mr-3"}>
                             <Button spanClasses={"text-left"}
-                                    href={"#About"}>
+                                    href={"https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/en/latest/inside/jedi-components/mpas-jedi/index.html"}>
                                Learn More
                             </Button>
                         </div>
@@ -47,4 +47,4 @@ const Hero = () => {
     );
 };
 
-export default Hero;
+export default Home;

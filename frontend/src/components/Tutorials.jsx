@@ -1,6 +1,7 @@
 import Section from "./Section.jsx";
-import Button from "./Button.jsx";
 import Heading from "./Heading.jsx";
+import Tutorial from "./Tutorial.jsx";
+import {tutorials} from "../sections/tutorials.js";
 
 const Tutorials = () => {
     return (
@@ -15,22 +16,15 @@ const Tutorials = () => {
                     " md:mb-20 lg:mb:[6rem]"
                 }>
                     <Heading title={"Tutorials"} />
-                    <Button spanClasses={"text-left"} className={"ml-3"}
-                            href={"https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202309NCAR/"}>
-                        NCAR September 2023
-                    </Button>
-                    <Button spanClasses={"text-left"} className={"ml-3"}
-                            href={"https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202310NCU/"}>
-                        NCU October 2023
-                    </Button>
-                    <Button spanClasses={"text-left"} className={"ml-3"}
-                            href={"https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202408INPE/"}>
-                        INPE August 2024
-                    </Button>
-                    <Button spanClasses={"text-left"} className={"ml-3"}
-                            href={"https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202410HOWARD/"}>
-                        HOWARD October 2024
-                    </Button>
+                    {tutorials.map((item)=>(
+                        <a key={item.id} href={item.href}>
+                        <Tutorial
+                        location={item.location}
+                        date={item.date}
+                        url={item.url}
+                        />
+                        </a>
+                    ))}
                 </div>
             </div>
         </Section>

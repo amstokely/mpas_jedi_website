@@ -1,4 +1,4 @@
-import {navigation} from "../constants/index.js";
+import {navigation} from "../sections/navigation.js";
 import {useLocation} from "react-router-dom";
 import {nsf, ncar, github} from "../assets/index.js";
 import Button from "./Button.jsx";

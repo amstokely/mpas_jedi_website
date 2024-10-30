@@ -106,9 +106,9 @@ In this tutorial, we’ll rebuild the website content from scratch.
 3. **Add Content to the Home Section**  
    Open `home.js` in `frontend/src/sections`. Instead of `id` and `url`, this file has an `introduction` property for the site’s introduction. Add this object to the `home` array:
    ```javascript
-   {
+   
        introduction: "Welcome to the MPAS-JEDI website. Here you can find information about the project, tutorials, upcoming events, and publications."
-   }
+   
    ```
 
    Now, a formatted introduction will appear under the navbar.

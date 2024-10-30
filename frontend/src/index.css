@@ -87,3 +87,8 @@
 .-rotate-360 {
   @apply rotate-[-360deg]
 }
+
+.dropcap:first-letter {
+  @apply text-4xl font-thin float-left mr-0 mb-4 leading-none;
+}
+

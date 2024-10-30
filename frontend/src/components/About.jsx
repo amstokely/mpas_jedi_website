@@ -16,7 +16,9 @@ const About = () => {
                 }>
                     <div className={"text-left"}>
                         <Heading title={"About"}/>
-                        {about.body}
+                        <div className={"dropcap"}>
+                            {about.body}
+                        </div>
                     </div>
                 </div>
             </div>

@@ -94,10 +94,10 @@ In this tutorial, we’ll rebuild the website content from scratch.
    Follow the same process for the other sections. Your final `navigation.js` file should look like this:
    ```javascript
    export const navigation = [
-       { id: 0, url: "#about", name: "About" },
-       { id: 1, url: "#tutorials", name: "Tutorials" },
-       { id: 2, url: "#events", name: "Upcoming Events" },
-       { id: 3, url: "#publications", name: "Publications" }
+       { id: 0, url: "#about", title: "About" },
+       { id: 1, url: "#tutorials", title: "Tutorials" },
+       { id: 2, url: "#events", title: "Upcoming Events" },
+       { id: 3, url: "#publications", title: "Publications" }
    ];
    ```
 

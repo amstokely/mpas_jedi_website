@@ -57,6 +57,81 @@ npm start dev
 ```
 This will launch a local development server. The website will be accessible at the port provided in the terminal output. Thanks to hot reloading, the website will automatically update with any changes made to the source code.
 
+## Tutorial
+
+In this tutorial, we’ll rebuild the website content from scratch.
+
+1. **Start the Development Server**  
+   Begin by navigating to the `frontend` directory and starting the development server:
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+   If you open the website in your browser, you’ll see that all sections are currently empty.
+
+2. **Create the Navbar**  
+   Navigate to the `frontend/src/sections` directory and open `navigation.js`. We’ll add the following sections to the navbar:
+   - About
+   - Tutorials
+   - Upcoming Events
+   - Publications
+
+   Each navbar component needs three properties: `id`, `url`, and `name`. Here’s how they function:
+   - **name**: Display name on the navbar
+   - **id**: Unique identifier (use the index of the entry, e.g., 0 for the first entry)
+   - **url**: `href` link for the navbar entry (e.g., `#about` for the "About" section)
+
+   To add the "About" section to the navbar, add this object to the `navigation` array:
+   ```javascript
+   {
+       id: 0,
+       url: "#about",
+       name: "About"
+   }
+   ```
+
+   Follow the same process for the other sections. Your final `navigation.js` file should look like this:
+   ```javascript
+   export const navigation = [
+       { id: 0, url: "#about", name: "About" },
+       { id: 1, url: "#tutorials", name: "Tutorials" },
+       { id: 2, url: "#events", name: "Upcoming Events" },
+       { id: 3, url: "#publications", name: "Publications" }
+   ];
+   ```
+
+   You’ll see your changes in real-time on the website. Clicking on a navbar entry like "Publications" will scroll to that section.
+
+3. **Add Content to the Home Section**  
+   Open `home.js` in `frontend/src/sections`. Instead of `id` and `url`, this file has an `introduction` property for the site’s introduction. Add this object to the `home` array:
+   ```javascript
+   {
+       introduction: "Welcome to the MPAS-JEDI website. Here you can find information about the project, tutorials, upcoming events, and publications."
+   }
+   ```
+
+   Now, a formatted introduction will appear under the navbar.
+
+4. **Exercise: Fill Out Remaining Sections**  
+   Complete the configuration files with the following details:
+
+   - **Tutorials**:
+     - **Tutorial 1**: Location: NCAR, Date: September 2023, [URL](https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202309NCAR/)
+     - **Tutorial 2**: Location: NCU, Date: October 2023, [URL](https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202310NCU/)
+     - **Tutorial 3**: Location: INPE, Date: August 2024, [URL](https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202408INPE/)
+     - **Tutorial 4**: Location: HOWARD, Date: October 2024, [URL](https://www2.mmm.ucar.edu/projects/mpas-jedi/tutorial/202410HOWARD/)
+
+   - **Publications**:
+     - **Publication 1**: "Data assimilation for the Model for Prediction Across Scales – Atmosphere with the Joint Effort for Data assimilation Integration (JEDI-MPAS 1.0.0): EnVar implementation and evaluation," [Link](https://gmd.copernicus.org/articles/15/7859/2022/)
+     - **Publication 2**: "Data assimilation for the Model for Prediction Across Scales – Atmosphere with the Joint Effort for Data assimilation Integration (JEDI-MPAS 2.0.0-beta): ensemble of 3D ensemble-variational (En-3DEnVar) assimilations," [Link](https://gmd.copernicus.org/articles/16/7123/2023/)
+       - Summary: Describes the multivariate static background error covariance (B) for the JEDI-MPAS 3D-Var data assimilation system.
+     - **Publication 3**: "Three-dimensional variational assimilation with a multivariate background error covariance for the Model for Prediction Across Scales – Atmosphere with the Joint Effort for Data assimilation Integration (JEDI-MPAS 2.0.0-beta)," [Link](https://gmd.copernicus.org/articles/17/3879/2024/)
+
+   - **About**:  
+     - "MPAS-JEDI is NCAR/MMM's community data assimilation system for the Model for Prediction Across Scales – Atmosphere (MPAS-A), supporting global and regional applications with deterministic or ensemble algorithms and advanced all-sky satellite radiance assimilation."
+
+Check the website to confirm that the layout and content match the original site.
+
 ## Editing Website Sections
 The `src/sections` directory contains JavaScript files that define each section’s content. Files are named according to their respective sections 
 (e.g., `publications.js` defines the publications section content). 

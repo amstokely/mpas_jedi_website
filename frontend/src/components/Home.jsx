@@ -2,6 +2,7 @@ import { satellite} from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import Heading from "./Heading.jsx";
+import {home} from "../sections/home.js";
 
 const Home = () => {
 
@@ -14,12 +15,7 @@ const Home = () => {
                 <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
                     <Heading title={"MPAS-JEDI"}/>
                     <div className={"font-sans font-semibold text-xl text-left flex"}>
-                        A community&nbsp;
-                        data assimilation&nbsp;
-                        system for the&nbsp;
-                        Model for Prediction Across Scales - Atmospheres&nbsp;
-                        based upon the &nbsp;
-                        Joint Effort for Data assimilation Integration.
+                        {home.introduction}
                         <div className={"mb-3 text-left mr-3"}>
                             <Button spanClasses={"text-left"}
                                     href={"https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/en/latest/inside/jedi-components/mpas-jedi/index.html"}>
